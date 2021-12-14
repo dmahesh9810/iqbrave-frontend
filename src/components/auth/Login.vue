@@ -79,8 +79,8 @@
                   "
                   autocomplete="off"
                   placeholder="Password"
-                /> <input @click="showPassword()" type="checkbox" class="mt-3"> <span>Show password</span>
-                <ErrorMessage name="password" class="error-feedback" />
+                /><ErrorMessage name="password" class="error-feedback" /><br/> <input @click="showPassword()" type="checkbox" class=""> <span>Show password</span>
+                
               </div>
               <div v-if="message" class="alert alert-danger" role="alert">
                 <h1 class="text-red-500">{{ message }}</h1>
@@ -153,7 +153,7 @@ export default {
   data() {
     const schema = yup.object().shape({
       email: yup.string().required("Email is required!"),
-      password: yup.string().required("Email is required!"),
+      password: yup.string().required("Password is required!"),
     });
 
     return {
@@ -176,7 +176,7 @@ export default {
   methods: {
     showPassword(){
       if(this.type == 'password'){
-        this.type = 'password';
+        this.type = 'text';
       }else{
         this.type = 'password';
       }
