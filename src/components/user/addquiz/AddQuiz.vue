@@ -251,7 +251,7 @@ export default {
       this.successMassage = "",
       axios
         .post(
-          'http://127.0.0.1:8000/api/savequiz',
+          'https://backend-re5zx.ondigitalocean.app/api/savequiz',
           {
             Subject: this.Subject,
             Quiz: this.Quiz,

@@ -269,7 +269,7 @@ export default {
       this.startGameOk = true;
       axios
         .post(
-          "http://127.0.0.1:8000/api/matchnumberenter",
+          "https://backend-re5zx.ondigitalocean.app/api/matchnumberenter",
           {
             stake: this.Stake,
             coinType: this.coinType,

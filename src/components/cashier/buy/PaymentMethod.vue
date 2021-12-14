@@ -605,7 +605,7 @@ export default {
       coindata: this.$route.params,
       returnUrl: "http://localhost:8081/returnurl",
       cancelUrl: "http://127.0.0.1:8000/",
-      notifyUrl: "http://127.0.0.1:8000/api/checkout/success",
+      notifyUrl: "https://backend-re5zx.ondigitalocean.app/api/checkout/success",
       payHereBtn: true,
       skrillBtn: true,
       paymentForm: false,
@@ -643,7 +643,7 @@ export default {
       if (this.coindata.dataShareOk == "true") {
         axios
           .post(
-            "http://127.0.0.1:8000/api/checkout/save/" + this.coindata.coinId,
+            "https://backend-re5zx.ondigitalocean.app/api/checkout/save/" + this.coindata.coinId,
             {
               saveCoinId: this.coindata.coinId,
               saveCoinPrice: this.coindata.amount,

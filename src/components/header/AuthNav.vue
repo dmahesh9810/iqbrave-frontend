@@ -91,7 +91,7 @@ export default {
   mounted(){
 axios
         .post(
-          "http://127.0.0.1:8000/api/checkoutbalance",
+          "https://backend-re5zx.ondigitalocean.app/api/checkoutbalance",
           {
             stake: this.Stake,
           },

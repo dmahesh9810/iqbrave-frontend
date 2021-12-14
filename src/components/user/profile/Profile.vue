@@ -666,7 +666,7 @@ export default {
 this.verifyBtn = true
       axios
           .post(
-            "http://127.0.0.1:8000/api/email/verification-notification",
+            "https://backend-re5zx.ondigitalocean.app/api/email/verification-notification",
             {
               data: "data"
             },

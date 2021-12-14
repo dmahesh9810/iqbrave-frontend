@@ -21,7 +21,7 @@ export default {
       
     axios
           .post(
-            "http://127.0.0.1:8000/api/checkout/payherenotify",
+            "https://backend-re5zx.ondigitalocean.app/api/checkout/payherenotify",
             {
               status: 2,
               order_id: this.paymentSuccess,

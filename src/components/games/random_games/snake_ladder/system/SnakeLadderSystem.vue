@@ -5571,7 +5571,7 @@ export default {
 
       axios
         .post(
-          "http://127.0.0.1:8000/api/snakeladderplayerclicksystem",
+          "https://backend-re5zx.ondigitalocean.app/api/snakeladderplayerclicksystem",
           {
             gameId: this.gameId,
           },
@@ -6042,7 +6042,7 @@ export default {
               // bot
               axios
                 .post(
-                  "http://127.0.0.1:8000/api/snakeladderresumebot",
+                  "https://backend-re5zx.ondigitalocean.app/api/snakeladderresumebot",
                   {
                     gameId: this.gameId,
                   },
@@ -6559,7 +6559,7 @@ export default {
           if (this.playerClick == 0) {
             axios
               .post(
-                "http://127.0.0.1:8000/api/snakeladderresumebot",
+                "https://backend-re5zx.ondigitalocean.app/api/snakeladderresumebot",
                 {
                   gameId: this.gameId,
                 },

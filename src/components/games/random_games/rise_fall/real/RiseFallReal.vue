@@ -330,7 +330,7 @@ export default {
          this.enterGame = true;
          axios
         .post(
-          "http://127.0.0.1:8000/api/risefallenter",
+          "https://backend-re5zx.ondigitalocean.app/api/risefallenter",
           {
             stake: this.Stake,
             digit: this.Digit,
