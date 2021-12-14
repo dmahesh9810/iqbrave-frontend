@@ -6016,12 +6016,6 @@ export default {
 
                 // player go
               }
-              // bot go
-              // bot waiting
-
-              // bot waiting
-
-              // bot go
               // player
             } else {
               console.log("error");

@@ -299,7 +299,7 @@ export default {
 
       axios
         .post(
-          "http://127.0.0.1:8000/api/matchnumberplayer",
+          "https://backend-re5zx.ondigitalocean.app/api/matchnumberplayer",
           {
             player_click: this.player_click,
             gameId: this.gameId,
@@ -361,7 +361,7 @@ export default {
           if (this.player_click !== 2) {
             axios
               .post(
-                "http://127.0.0.1:8000/api/matchnumberbot",
+                "https://backend-re5zx.ondigitalocean.app/api/matchnumberbot",
                 {
                   player_click: this.player_click,
                   gameId: this.gameId,
@@ -405,7 +405,7 @@ export default {
     Resume() {
       axios
         .post(
-          "http://127.0.0.1:8000/api/matchresume",
+          "https://backend-re5zx.ondigitalocean.app/api/matchresume",
           {
             gameId: this.resumeId,
           },

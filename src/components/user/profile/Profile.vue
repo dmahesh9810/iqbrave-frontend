@@ -692,7 +692,7 @@ this.verifyBtn = true
       if (row === "firstname") {
         axios
           .post(
-            "http://127.0.0.1:8000/api/profile-update",
+            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
             {
               firstname: value,
             },
@@ -715,7 +715,7 @@ this.verifyBtn = true
       } else if (row === "lastname") {
         axios
           .post(
-            "http://127.0.0.1:8000/api/profile-update",
+            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
             {
               lastname: value,
             },
@@ -738,7 +738,7 @@ this.verifyBtn = true
       else if (row === "email") {
         axios
           .post(
-            "http://127.0.0.1:8000/api/profile-update",
+            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
             {
               email: value,
             },
@@ -761,7 +761,7 @@ this.verifyBtn = true
       else if (row === "country") {
         axios
           .post(
-            "http://127.0.0.1:8000/api/profile-update",
+            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
             {
               country: value,
             },
@@ -784,7 +784,7 @@ this.verifyBtn = true
       else if (row === "city") {
         axios
           .post(
-            "http://127.0.0.1:8000/api/profile-update",
+            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
             {
               city: value,
             },
@@ -807,7 +807,7 @@ this.verifyBtn = true
       else if (row === "mobile") {
         axios
           .post(
-            "http://127.0.0.1:8000/api/profile-update",
+            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
             {
               mobile: value,
             },
@@ -869,7 +869,7 @@ this.verifyBtn = true
         // asd
         axios
           .get(
-            "http://127.0.0.1:8000/api/email/verification-notification-check",
+            "https://backend-re5zx.ondigitalocean.app/api/email/verification-notification-check",
             { headers: authHeader() }
           )
           .then((response) => {

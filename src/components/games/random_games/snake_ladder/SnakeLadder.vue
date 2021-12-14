@@ -19,8 +19,7 @@
           >
             <img
               class="2xl:w-full xl:h-96 2xl:w-full xl:h-96 lg:w-full lg:h-96 md:w-full md:h-96  w-full h-full object-cover	"
-              src="https://wallpapercave.com/wp/wp9142013.jpg"
-              alt="nike shoes"
+              src="https://wallpapercave.com/wp/wp9142013.jpg" 
             />
           </div>
         </div>
