@@ -40,13 +40,13 @@
                 " 
                 placeholder="Email"
               />
-              <ErrorMessage name="email" class="error-feedback" />
             </div>
             <div class="form-group">
               <Field
                 :type="type"
                 name="password"
                 class="
+                w-72
                   container
                   max-w-sm
                   mx-auto
@@ -58,10 +58,9 @@
                   outline-none
                   h-12
                 "
-                aria-autocomplete="off"
+                autocomplete="off"
                 placeholder="Password"
-              />
-              <ErrorMessage name="password" class="error-feedback" />
+              /> 
             </div>
             <div class="container max-w-sm">
               <input @click="showPassword()" type="checkbox" class="mt-3" />
@@ -151,13 +150,13 @@
 </template>
 
 <script>
-import { Form, Field, ErrorMessage } from "vee-validate";
+import { Form, Field} from "vee-validate";
 import * as yup from "yup";
 export default {
   components: {
     Form,
     Field,
-    ErrorMessage,
+    // ErrorMessage,
   },
   computed: {
     currentUser() {
