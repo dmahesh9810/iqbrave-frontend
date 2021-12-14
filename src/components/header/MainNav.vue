@@ -179,7 +179,7 @@
                     </li>
                     <li class="rounded-sm px-3 py-1 hover:bg-gray-100 text-right p-2 mb-2">
                       <font-awesome-icon icon="sign-out-alt" />
-                      <a class="rounded-sm px-3 py-1 hover:bg-gray-100" @click.prevent="logOut,isOpen = !isOpen" href="">
+                      <a class="rounded-sm px-3 py-1 hover:bg-gray-100" @click.prevent="logOut" href="">
                        Logout
                     </a>
                     </li>
