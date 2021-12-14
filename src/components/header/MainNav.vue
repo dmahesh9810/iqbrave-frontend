@@ -37,7 +37,7 @@
                 Home
               </router-link>
      
-     <router-link
+     <router-link v-if="currentUser"
                 to="/cashier"
                 class="
                   border-b-2 border-transparent
@@ -50,7 +50,7 @@
               >
                 Cashier
               </router-link>
-     <router-link
+     <router-link v-if="currentUser"
                 to="/cashier"
                 class="
                   border-b-2 border-transparent

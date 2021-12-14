@@ -1,5 +1,7 @@
 <template>
-  <div class="col-md-12 mt-10 mb-48">
+<div class=" h-screen bg-gray-100">
+
+  <div class="col-md-12  mb-48">
     <div class="flex justify-center items-center h-full">
       <!-- component -->
       <div
@@ -11,7 +13,7 @@
           items-center
           justify-center
           px-2
-          mt-5
+          mt-20
         "
       >
         <div
@@ -32,11 +34,7 @@
               src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
               class="profile-img-card"
             />
-            <Form
-              class=""
-              @submit="handleLogin"
-              :validation-schema="schema"
-            >
+            <Form class="" @submit="handleLogin" :validation-schema="schema">
               <div class="form-group">
                 <Field
                   name="email"
@@ -63,7 +61,7 @@
               <div class="form-group">
                 <Field
                   name="password"
-                  type="password"
+                  :type="type"
                   class="
                     container
                     max-w-sm
@@ -81,20 +79,21 @@
                   "
                   autocomplete="off"
                   placeholder="Password"
-                />
+                /> <input @click="showPassword()" type="checkbox" class="mt-3"> <span>Show password</span>
                 <ErrorMessage name="password" class="error-feedback" />
               </div>
-<div v-if="message" class="alert alert-danger" role="alert">
-                             <h1 class="text-red-500">{{message}}</h1> 
-
-                </div>
+              <div v-if="message" class="alert alert-danger" role="alert">
+                <h1 class="text-red-500">{{ message }}</h1>
+              </div>
               <div class="form-group">
                 <button
+                style="transition: all 0.45s ease 0s"
                   class="
                     btn btn-primary btn-block
-                    bg-purple-600
-                    hover:bg-purple-900
-                    text-white
+                    border-2 border-blue-600
+                  hover:bg-blue-600
+                  text-blue-600
+                  hover:text-white
                     font-bold
                     p-2
                     rounded
@@ -130,15 +129,14 @@
                   Reset Password
                 </router-link>
               </div>
-              <div class="form-group">
-                
-              </div>
+              <div class="form-group"></div>
             </Form>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -162,6 +160,7 @@ export default {
       loading: false,
       message: "",
       schema,
+      type: 'password',
     };
   },
   computed: {
@@ -175,6 +174,13 @@ export default {
     }
   },
   methods: {
+    showPassword(){
+      if(this.type == 'password'){
+        this.type = 'password';
+      }else{
+        this.type = 'password';
+      }
+    },
     handleLogin(user) {
       this.loading = true;
 
@@ -183,6 +189,7 @@ export default {
           this.$router.push("/");
         },
         (error) => {
+          this.$router.push("/login");
           this.loading = false;
           this.message =
             (error.response &&

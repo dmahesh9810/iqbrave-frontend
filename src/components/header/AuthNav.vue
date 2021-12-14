@@ -15,12 +15,10 @@
               to="/home"
               class="
                 text-gray-100
-                border-b-2 border-transparent
-                hover:text-gray-400
-                dark:hover:text-gray-200
-                hover:border-blue-500
+                border-b-2 border-transparent 
                 mx-1.5
                 sm:mx-6
+                cursor-default
               "
             >
              TC {{tc}}
@@ -29,12 +27,10 @@
               to="/home"
               class="
                 text-gray-100
-                border-b-2 border-transparent
-                hover:text-gray-400
-                dark:hover:text-gray-200
-                hover:border-blue-500
+                border-b-2 border-transparent 
                 mx-1.5
                 sm:mx-6
+                cursor-default
               "
             >
              GC {{gc}}
@@ -44,12 +40,10 @@
               to="/home"
               class="
                 text-gray-100
-                border-b-2 border-transparent
-                hover:text-gray-400
-                dark:hover:text-gray-200
-                hover:border-blue-500
+                border-b-2 border-transparent 
                 mx-1.5
                 sm:mx-6
+                cursor-default
               "
             >
              GCG {{gsg}}
@@ -58,12 +52,10 @@
               to="/home"
               class="
                 text-gray-100
-                border-b-2 border-transparent
-                hover:text-gray-400
-                dark:hover:text-gray-200
-                hover:border-blue-500
+                border-b-2 border-transparent 
                 mx-1.5
                 sm:mx-6
+                cursor-default
               "
             >
               ${{usd}}

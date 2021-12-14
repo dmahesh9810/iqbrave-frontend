@@ -1,7 +1,6 @@
 <template>
-  <div class="col-md-12 mt-10">
-    <div class="flex justify-center items-center bg-gray-100 h-full
-         ">
+  <div class="col-md-12">
+    <div class="flex justify-center items-center bg-gray-100 h-full">
       <div
         class="
           container
@@ -11,10 +10,22 @@
           items-center
           justify-center
           px-2
-          mt-5
+          mt-20
+          mb-20
         "
       >
-        <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full max-w-sm">
+        <div
+          class="
+            bg-white
+            px-6
+            py-8
+            rounded
+            shadow-md
+            text-black
+            w-full
+            max-w-sm
+          "
+        >
           <h1 class="mb-8 text-3xl text-center">Sign up</h1>
           <h1 class="error-feedback">{{ message }}</h1>
           <Form @submit="handleRegister" :validation-schema="schema">
@@ -24,20 +35,20 @@
                   name="firstname"
                   type="text"
                   placeholder="First Name"
-                  class=" 
-              container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2
-          mt-5
-          focus:border-purple-700
-              rounded
-              border-2
-              outline-none
-              h-12
+                  class="
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                    focus:border-purple-700
+                    rounded
+                    border-2
+                    outline-none
+                    h-12
                   "
                 />
                 <ErrorMessage name="firstname" class="error-feedback" />
@@ -51,19 +62,19 @@
                   type="text"
                   placeholder="Last Name"
                   class="
-                  container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2
-          mt-5
-          focus:border-purple-700
-              rounded
-              border-2
-              outline-none
-              h-12
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                    focus:border-purple-700
+                    rounded
+                    border-2
+                    outline-none
+                    h-12
                   "
                 />
                 <ErrorMessage name="lastname" class="error-feedback" />
@@ -77,20 +88,19 @@
                   type="email"
                   placeholder="E-mali"
                   class="
-                  
-                  container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2
-          mt-5
-          focus:border-purple-700
-              rounded
-              border-2
-              outline-none
-              h-12
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                    focus:border-purple-700
+                    rounded
+                    border-2
+                    outline-none
+                    h-12
                   "
                 />
                 <ErrorMessage name="email" class="error-feedback" />
@@ -104,20 +114,19 @@
                   type="text"
                   placeholder="Mobile"
                   class="
-                  
-                 container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2
-          mt-5
-          focus:border-purple-700
-              rounded
-              border-2
-              outline-none
-              h-12
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                    focus:border-purple-700
+                    rounded
+                    border-2
+                    outline-none
+                    h-12
                   "
                 />
                 <ErrorMessage name="mobile" class="error-feedback" />
@@ -131,20 +140,19 @@
                   type="text"
                   placeholder="Country"
                   class="
-                  
-                 container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2
-          mt-5
-          focus:border-purple-700
-              rounded
-              border-2
-              outline-none
-              h-12
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                    focus:border-purple-700
+                    rounded
+                    border-2
+                    outline-none
+                    h-12
                   "
                 />
                 <ErrorMessage name="country" class="error-feedback" />
@@ -158,20 +166,19 @@
                   type="text"
                   placeholder="city"
                   class="
-                  
-                 container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2
-          mt-5
-          focus:border-purple-700
-              rounded
-              border-2
-              outline-none
-              h-12
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                    focus:border-purple-700
+                    rounded
+                    border-2
+                    outline-none
+                    h-12
                   "
                 />
                 <ErrorMessage name="city" class="error-feedback" />
@@ -182,23 +189,22 @@
               <div class="form-group">
                 <Field
                   name="password"
-                  type="Password"
+                  :type="type"
                   placeholder="password"
                   class="
-                  
-                 container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2
-          mt-5
-          focus:border-purple-700
-              rounded
-              border-2
-              outline-none
-              h-12
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                    focus:border-purple-700
+                    rounded
+                    border-2
+                    outline-none
+                    h-12
                   "
                 />
                 <ErrorMessage name="password" class="error-feedback" />
@@ -206,23 +212,22 @@
               <div class="form-group">
                 <Field
                   name="confirmpassword"
-                  type="password"
+                  :type="type"
                   placeholder="Confirm Password"
                   class="
-                  
-                  container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2
-          mt-5
-          focus:border-purple-700
-              rounded
-              border-2
-              outline-none
-              h-12
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                    focus:border-purple-700
+                    rounded
+                    border-2
+                    outline-none
+                    h-12
                   "
                 />
                 <ErrorMessage name="confirmpassword" class="error-feedback" />
@@ -231,20 +236,29 @@
                 </h1>
               </div>
               <div class="form-group">
-                <button class="btn btn-primary btn-block bg-purple-600
-              hover:bg-purple-900
-              text-white
-              font-bold
-              p-2
-              rounded
-              container
-          max-w-sm
-          mx-auto
-          flex-1 flex flex-col
-          items-center
-          justify-center
-          px-2         
-              mt-5" :disabled="loading">
+                <input @click="showPassword()" type="checkbox" class="mt-3"> <span>Show password</span>
+                <button
+                  style="transition: all 0.45s ease 0s"
+                  class="
+                    btn btn-primary btn-block
+                    border-2 border-blue-600
+                    hover:bg-blue-600
+                    text-blue-600
+                    hover:text-white
+                    font-bold
+                    p-2
+                    rounded
+                    container
+                    max-w-sm
+                    mx-auto
+                    flex-1 flex flex-col
+                    items-center
+                    justify-center
+                    px-2
+                    mt-5
+                  "
+                  :disabled="loading"
+                >
                   <span
                     v-show="loading"
                     class="spinner-border spinner-border-sm"
@@ -279,7 +293,8 @@ export default {
     ErrorMessage,
   },
   data() {
-    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+    const phoneRegExp =
+      /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
     const schema = yup.object().shape({
       firstname: yup
         .string()
@@ -291,7 +306,7 @@ export default {
         .required("Lastname is required!")
         .min(3, "Must be at least 3 characters!")
         .max(40, "Must be maximum 40 characters!"),
-      
+
       country: yup
         .string()
         .required("Country is required!")
@@ -302,10 +317,10 @@ export default {
         .required("City is required!")
         .min(3, "Must be at least 3 characters!")
         .max(40, "Must be maximum 40 characters!"),
-      
+
       mobile: yup
         .string()
-        .matches(phoneRegExp,'Phone number is not valid')
+        .matches(phoneRegExp, "Phone number is not valid")
         .required("mobile is required!")
         .min(5, "Phone number is not valid")
         .max(15, "Phone number is not valid"),
@@ -320,12 +335,13 @@ export default {
         .max(16, "Must be maximum 16 characters!"),
       confirmpassword: yup
         .string()
-        .required("Confirm Password is required!") 
-        .oneOf([yup.ref('password'), null], 'Passwords must match') 
+        .required("Confirm Password is required!")
+        .oneOf([yup.ref("password"), null], "Passwords must match"),
     });
 
     return {
       dd: "",
+      type: 'password',
       successful: false,
       loading: false,
 
@@ -359,6 +375,13 @@ export default {
     }
   },
   methods: {
+    showPassword(){
+      if(this.type == 'password'){
+        this.type = 'text';
+      }else{
+        this.type = 'password';
+      }
+    },
     handleRegister(user) {
       this.message = "";
       this.fnameMessage = "";
@@ -375,7 +398,6 @@ export default {
           this.successful = true;
           this.loading = false;
           this.$router.push("/login");
-
         },
         (error) => {
           this.fnameErrors = false;
@@ -385,8 +407,7 @@ export default {
           this.emailErrors = false;
           this.passwordErrors = false;
           this.mobileErrors = false;
-              this.loading = false;
-
+          this.loading = false;
 
           if (
             error.response.data.errors.confirmpassword ||
@@ -452,7 +473,7 @@ export default {
               this.loading = false;
               this.mobileErrors = true;
             }
-            
+
             if (error.response.data.errors.country) {
               this.countryMessage =
                 (error.response &&
@@ -487,8 +508,8 @@ export default {
             this.mobileErrors = true;
           }
           this.successful = false;
-            this.loading = false;
-            this.mobileErrors = true;
+          this.loading = false;
+          this.mobileErrors = true;
         }
       );
     },
