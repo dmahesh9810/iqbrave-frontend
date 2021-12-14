@@ -22,7 +22,7 @@
     </div>
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
       
-      <router-link
+      <router-link @click="isOpen = !isOpen"
                 to="/home"
                 class="
                   border-b-2 border-transparent
@@ -37,7 +37,7 @@
                 Home
               </router-link>
      
-     <router-link v-if="currentUser"
+     <router-link @click="isOpen = !isOpen" v-if="currentUser"
                 to="/cashier"
                 class="
                   border-b-2 border-transparent
@@ -50,7 +50,7 @@
               >
                 Cashier
               </router-link>
-     <router-link v-if="currentUser"
+     <router-link @click="isOpen = !isOpen" v-if="currentUser"
                 to="/cashier"
                 class="
                   border-b-2 border-transparent
@@ -63,7 +63,7 @@
               >
                 Statement
               </router-link>
-              <div
+              <div @click="isOpen = !isOpen"
                 v-if="showModeratorBoard"
                 class="
                   border-b-2 border-transparent
@@ -76,7 +76,7 @@
               >
                 <router-link to="/mod" class="">Moderator</router-link>
               </div>
-     <router-link v-if="showAdminBoard"
+     <router-link v-if="showAdminBoard" @click="isOpen = !isOpen"
                 to="/admin"
                 class="
                   border-b-2 border-transparent
@@ -89,7 +89,7 @@
               >
                 Admin
               </router-link> 
-                <router-link v-if="!currentUser"
+                <router-link v-if="!currentUser" @click="isOpen = !isOpen"
                   to="/register"
                   class="
                     border-b-2 border-transparent
@@ -101,7 +101,7 @@
                   "
                   >Signup</router-link
                 >
-                <router-link v-if="!currentUser"
+                <router-link v-if="!currentUser" @click="isOpen = !isOpen"
                   to="/login"
                   class="
                    border-b-2 border-transparent
@@ -179,7 +179,7 @@
                     </li>
                     <li class="rounded-sm px-3 py-1 hover:bg-gray-100 text-right p-2 mb-2">
                       <font-awesome-icon icon="sign-out-alt" />
-                      <a class="rounded-sm px-3 py-1 hover:bg-gray-100" @click.prevent="logOut" href="">
+                      <a class="rounded-sm px-3 py-1 hover:bg-gray-100" @click.prevent="logOut,isOpen = !isOpen" href="">
                        Logout
                     </a>
                     </li>
