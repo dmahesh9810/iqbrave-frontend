@@ -51,7 +51,7 @@ const routes = [
         return {x: 0, y: 0}
       }
     },
-    path: "/homes",
+    path: "/",
     name: "home",
     component: Home,
   },

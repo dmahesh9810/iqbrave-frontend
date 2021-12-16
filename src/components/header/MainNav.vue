@@ -4,13 +4,17 @@
      <header class="bg-blue-900  sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
       <div>
+        <router-link to="/">
         <img class="h-14 ml-10" v-bind:src="require('@/assets/logo/logo.png')" alt="Workcation">
+        </router-link>
         
       </div>
+      <router-link to="/">
       <p class="   
                   mx-1.5
                   sm:mx-6
                    text-white font-semibold rounded">IQBRAVE <span class="text-red-600">.COM</span></p>
+      </router-link>
       <div class="sm:hidden">
         <button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
           <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
