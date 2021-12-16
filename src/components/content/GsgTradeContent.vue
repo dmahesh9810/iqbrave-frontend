@@ -30,20 +30,20 @@
             <div class="text-lg text-center text-gray-500 mt-10">
               <router-link
                 style="transition: all 0.45s ease 0s"
-                to="/frogotpassword"
+                to="/"
                 class="
                   btn btn-primary btn-block
-                  border-2 border-blue-600
-                  hover:bg-blue-600
-                  text-blue-600
+                  border-2 border-gray-600
+                 
+                  text-gray-600
                   rounded-lg
                   px-3
                   py-2
-                  cursor-pointer
-                  hover:text-white
+                  cursor-pointer 
                 "
+                
               >
-                Trade Now
+                Trade Now comming soon
               </router-link>
             </div>
           </div>
