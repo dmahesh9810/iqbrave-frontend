@@ -27,7 +27,7 @@ Provide examples of the code in question and use syntax highlighting.
               flex-col flex
               ml-auto
               items-center">
-              <router-link style="transition: all 0.45s ease 0s"
+              <router-link @click="scrool()" style="transition: all 0.45s ease 0s"
                   to="/knowledgegame"
                   class="2xl:w-96 2xl:h-20
                 xl:w-96 xl:h-20
@@ -60,7 +60,13 @@ Provide examples of the code in question and use syntax highlighting.
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    scrool() {
+      window.scrollTo(0, 0);
+    },
+  },
+};
 </script>
 
 <style>

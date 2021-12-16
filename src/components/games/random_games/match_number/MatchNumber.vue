@@ -23,7 +23,7 @@
           >
             <img
               class="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+              src="https://images.pexels.com/photos/37534/cube-six-gambling-play-37534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               alt="nike shoes"
             />
           </div>

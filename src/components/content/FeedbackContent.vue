@@ -18,7 +18,7 @@
               text-gray-50 text-opacity-100
             "
           >
-            Please provide your valuable feedback and something something ...
+            Please provide your valuable feedback and something ...
           </p>
         </div>
         <div class="flex flex-col w-full lg:w-2/3 justify-center">
@@ -41,8 +41,11 @@
                   <div class="flex-auto p-5 lg:p-10">
                     <h4 class="text-2xl mb-4 text-black font-semibold">
                       Have a suggestion?
+                      <br>
+                      
                     </h4>
-                    <form id="feedbackForm" action="" method="">
+                    <p class="text-green-500" v-if="smassage !== ''">{{smassage}}</p>
+                    <p class="text-red-500" v-if="fmassage !== ''" >{{fMassage}}</p>
                       <div class="relative w-full mb-3">
                         <label
                           class="
@@ -55,7 +58,7 @@
                           for="email"
                           >Email</label
                         ><input
-                          type="email"
+                          v-model="email"
                           name="email"
                           id="email"
                           class="
@@ -75,7 +78,7 @@
                           placeholder=" "
                           style="transition: all 0.15s ease 0s"
                           required
-                        />
+                        /> 
                       </div>
                       <div class="relative w-full mb-3">
                         <label
@@ -89,6 +92,7 @@
                           for="message"
                           >Message</label
                         ><textarea
+                        v-model="feedback"
                           maxlength="300"
                           name="feedback"
                           id="feedback"
@@ -112,8 +116,7 @@
                         ></textarea>
                       </div>
                       <div class="text-center mt-6">
-                        <button
-                          id="feedbackBtn"
+                        <button @click="submitdata()" 
                           class="
                             btn btn-primary btn-block
                             border-2 border-blue-600
@@ -124,14 +127,12 @@
                             py-2
                             cursor-pointer
                             hover:text-white
-                          "
-                          type="submit"
+                          " 
                           style="transition: all 0.45s ease 0s"
                         >
                           Submit
                         </button>
                       </div>
-                    </form>
                   </div>
                 </div>
               </div>
@@ -144,7 +145,45 @@
 </template>
 
 <script>
-export default {};
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      email: "",
+      feedback: "",
+      smassage: "",
+      fMassage: "",
+    }
+  },
+  methods: {
+    submitdata(){
+      this.smassage = "";
+      this.massage = "";
+axios
+        .post(
+          "https://backend-re5zx.ondigitalocean.app/api/feedback",
+          {
+            email: this.email,
+            feedback: this.feedback,
+          }
+        )
+        .then((response) => {
+          console.log(response);
+          if (response.data.status == 200) {
+            this.email = "";
+            this.feedback = "";
+            this.fMassage = '';
+            this.smassage = response.data.massage;
+          } else {
+            this.resultResponse = true;
+            this.smassage = '';
+            this.fMassage = response.data.massage;
+          }
+        });
+    }
+  },
+};
 </script>
 
 <style lang="scss" scoped>

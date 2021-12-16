@@ -22,7 +22,7 @@
           >
             <img
               class="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+              src="https://cdn.pixabay.com/photo/2016/11/29/03/27/track-and-field-1867053_960_720.jpg"
               alt="nike shoes"
             />
           </div>

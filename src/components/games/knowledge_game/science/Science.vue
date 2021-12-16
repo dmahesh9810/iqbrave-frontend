@@ -2,7 +2,7 @@
   <div>
     <!-- enater game -->
     <div class="flex items-center p-10 w-full h-full bg-white">
-      <div class="border-b pt-16 grid grid-cols-2 gap-8">
+      <div class="border-b pt-16 2xl:grid 2xl:grid-cols-2 xl:grid xl:grid-cols-2 lg:grid lg:grid-cols-2 md:grid md:grid-cols- gap-8">
         <div class="flex flex-col justify-start">
           <div
             class="
@@ -16,16 +16,16 @@
             <img
               class="2xl:w-full xl:h-72 2xl:w-full xl:h-72 lg:w-full lg:h-72 md:w-full md:h-72  w-full h-full object-cover	"
               src="https://cdn.pixabay.com/photo/2018/07/15/10/44/dna-3539309_960_720.jpg"
-              alt="nike shoes"
+              
             />
           </div>
         </div>
         <div class="flex flex-col">
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 2xl:ml-3 md:ml-3 lg:ml-3 xl:ml-3">
             <h1 class="capitalize 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-xl font-extrabold">
               Science Knowledge
             </h1>
-            <p class="text-lg text-gray-500">
+            <p class="text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione
               error eum qui quidem? Veniam accusamus ea repudiandae itaque,

@@ -200,7 +200,7 @@ export default {
       this.Massage = "";
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/getquiz",
+          "https://backend-re5zx.ondigitalocean.app/api/getquiz",
           {
             stake: this.Stake,
             subject: "science",
@@ -236,7 +236,7 @@ export default {
                     this.Massage = "Time Out";
                   axios
                     .post(
-                      "https://backend-re5zx.ondigitalocean.app/quizanswer",
+                      "https://backend-re5zx.ondigitalocean.app/api/quizanswer",
                       {
                         correct: "0",
                         quizResultid: this.QuizResultId,
