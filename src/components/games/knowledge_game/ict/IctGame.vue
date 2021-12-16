@@ -1,9 +1,25 @@
 <template>
+
+<div>
+  <div class="flex justify-center 
+          ">
+    <router-link to="/knowledgegame" class=" btn btn-primary btn-block
+                bg-blue-600
+                text-white
+                rounded-lg
+                px-3
+                py-2
+                text-white
+                cursor-pointer
+                w-80  flex justify-center absolute mt-5">Back</router-link>
+  </div>
   <div class="w-full h-screen flex items-center justify-center bg-gray-200">
+    
     <div
       v-if="gameStart == false"
-      class="wrapper bg-purple-700 antialiased text-gray-900"
+      class="wrapper bg-purple-700 antialiased text-gray-900 rounded-lg"
     >
+    
       <div>
         <div class="relative">
           <!-- center -->
@@ -17,7 +33,7 @@
             <div class="p-5">
               <div>
                 <div>
-                  <input
+                  <input placeholder="Enter GC Stake"
                     v-model="Stake"
                     class="
                       border-2 border-gray-200
@@ -133,6 +149,8 @@
     </div>
     <div></div>
   </div>
+</div>
+  
 </template>
 
 <script>
@@ -142,7 +160,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      Stake: "1",
+      Stake: "",
       gameStart: false,
       resultResponse: false,
 
@@ -179,8 +197,7 @@ export default {
           },
           { headers: authHeader() }
         )
-        .then((response) => {
-          console.log(response);
+        .then((response) => { 
           if (response.data.status == 200) {
             this.Massage = response.data.massage;
             this.gameStart = false;
@@ -207,8 +224,7 @@ export default {
           },
           { headers: authHeader() }
         )
-        .then((response) => {
-          console.log(response);
+        .then((response) => { 
           if (response.data.status == 200) {
             this.QuizResultId = response.data.quizresultid;
             this.QuestionId = response.data.questionid;
@@ -244,8 +260,7 @@ export default {
                       },
                       { headers: authHeader() }
                     )
-                    .then((response) => {
-                      console.log(response);
+                    .then((response) => { 
                       if (response.data.status == 200) {
                         this.Massage = "Time Out";
                         this.gameStart = false;

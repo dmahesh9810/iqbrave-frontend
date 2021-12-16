@@ -1,7 +1,20 @@
 <template>
+ 
 <div class="w-full h-screen flex items-center justify-center bg-gray-200">
-<div class="wrapper bg-purple-700 antialiased text-gray-900">
-    <div>
+  
+<div><div>
+    <router-link to="/randomgame" class="btn btn-primary btn-block
+                bg-purple-600
+                hover:bg-purple-900
+                text-white
+                rounded-lg
+                px-3
+                py-2
+                text-white
+                cursor-pointer
+                w-full flex items-center justify-center bg-gray-200">Back</router-link>
+  </div> 
+    <div  class="wrapper bg-purple-700 antialiased text-gray-900 mt-2">
       <div class="relative">
         <div class="bg-white p-6 rounded-sm shadow-lg ml-28 h-32 text-center">
           <div class="items-baseline">
@@ -52,7 +65,7 @@
             {{massage}}
             </div>
             <div>
-              <input
+              <input placeholder="Enter Stake"
                 v-model="Stake"
                 class="
                   border-2 border-gray-200
@@ -97,7 +110,7 @@
             </div>
             <div>
               <button
-                v-if="startGameOK == false"
+                v-if="startGameOK == false && Stake >= 1"
                 @click="Start()"
                 class="
                   btn btn-primary btn-block
@@ -116,7 +129,7 @@
                 Start Game
               </button>
               <button
-                v-if="startGameOK == true && startGame == false"
+                v-else
                 class="
                   btn btn-primary btn-block
                   mt-5
@@ -241,7 +254,7 @@ export default {
       massage: "",
       startGame: false,
       startGameOK: false,
-      Stake: 2,
+      Stake: "",
       coinType: "tc",
       systemRandom: "",
       result: "",
@@ -426,7 +439,7 @@ export default {
             this.resumeId = "";
             this.startGame = false;
             this.startGameOK = false;
-            this.Stake = 2;
+            this.Stake = "";
             this.systemRandom = "";
             this.result = "";
 
@@ -450,7 +463,6 @@ export default {
     Restart() {
       this.startGame = false;
       this.startGameOK = false;
-      this.Stake = 2;
       this.systemRandom = "";
       this.result = "";
 

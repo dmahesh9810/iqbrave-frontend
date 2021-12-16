@@ -157,7 +157,7 @@ export default {
           this.successMassage = "";
           axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/sellcoin",
+          "http://localhost:8000/api/sellcoin",
           {
             sellPrice: this.sellPrice,
             sellValue: this.sellValue,

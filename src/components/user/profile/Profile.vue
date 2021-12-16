@@ -35,6 +35,7 @@
                       border border-blue-500
                       hover:border-transparent
                       rounded
+                      w-full mt-4
                     "
                   >
                     Edit
@@ -122,6 +123,7 @@
                       border border-blue-500
                       hover:border-transparent
                       rounded
+                      w-full mt-4
                     "
                   >
                     Edit
@@ -210,6 +212,7 @@
                       border border-blue-500
                       hover:border-transparent
                       rounded
+                      w-full mt-4
                     "
                   >
                     Edit
@@ -328,6 +331,7 @@
                       border border-blue-500
                       hover:border-transparent
                       rounded
+                      w-full mt-4
                     "
                   >
                     Edit
@@ -413,6 +417,7 @@
                       border border-blue-500
                       hover:border-transparent
                       rounded
+                      w-full mt-4
                     "
                   >
                     Edit
@@ -498,6 +503,7 @@
                       border border-blue-500
                       hover:border-transparent
                       rounded
+                      w-full mt-4
                     "
                   >
                     Edit
@@ -554,7 +560,7 @@
         </div>
         <!-- Mobile -->
         <div>
-          <div>
+          <!-- <div>
             <div
               class=" 
                 rounded-lg
@@ -585,7 +591,7 @@
                 </button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- Mobile -->
       </div>

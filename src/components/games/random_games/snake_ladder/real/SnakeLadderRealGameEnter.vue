@@ -1,6 +1,19 @@
 <template >
   <div>
     <!-- Snake Ladder Real -->
+    <div class="flex justify-center 
+          ">
+    <router-link to="/randomgame" class=" btn btn-primary btn-block
+                bg-blue-600
+                hover:bg-purple-900
+                text-white
+                rounded-lg
+                px-3
+                py-2
+                text-white
+                cursor-pointer
+                w-80  flex justify-center absolute mt-5">Back</router-link>
+  </div> 
     <div
       v-if="waitingRoom == false && systemPlay == false"
       class="min-h-screen bg-gray-100 flex justify-center items-center"
@@ -74,23 +87,8 @@
             </div>
           </div>
           <div class="mt-3">
-            <input
-              checked
-              type="radio"
-              id="one"
-              value="gc"
-              v-model="gameType"
-              name="coin"
-              class="mr-1"
-            /><span>GC</span>
-            <input
-              type="radio"
-              id="two"
-              value="usd"
-              v-model="gameType"
-              name="coin"
-              class="ml-4 mr-1"
-            /><span>USD</span>
+            
+            
             <input
               type="radio"
               id="two"
@@ -98,7 +96,24 @@
               v-model="gameType"
               name="coin"
               class="ml-4 mr-1"
-            /><span>Demo</span><br />
+            /><span>TC</span>
+            <input
+              checked
+              type="radio"
+              id="one"
+              value="gc"
+              v-model="gameType"
+              name="coin"
+              class="mr-1 ml-4"
+            /><span>GC</span>
+            <input disabled
+              type="radio"
+              id="two"
+              value="usd"
+              v-model="gameType"
+              name="coin"
+              class="ml-4 mr-1"
+            /><span><span class="text-gray-500">USD</span></span><br />
           </div>
           <button @click="Play(gameType)">
             <span
@@ -106,7 +121,7 @@
                 transform
                 -translate-x-10 -translate-y-24
                 z-50
-                text-purple-500
+                text-blue-600
                 bg-white
                 rounded-full
                 hover:text-purple-400
@@ -125,7 +140,7 @@
           </button>
         </div>
         <div
-          v-if="PlayBtn == false && waitingRoom == false && systemPlay == false"
+          v-if="PlayBtn == false && waitingRoom == false && systemPlay == false" class="p-5"
         >
           <div v-if="resume == 1">
             <button
@@ -245,9 +260,7 @@ export default {
               this.playerRandom = response.data.player_random;
               this.botRandom = response.data.bot_random;
               this.gameId = response.data.id;
-              this.systemPlay = true;
-
-              console.log(response);
+              this.systemPlay = true; 
             } else {
               this.massage = response.data.massage;
               this.PlayBtn = true;
@@ -276,13 +289,11 @@ export default {
             (response) => {
               if (response.data.status == 200) {
                 (this.waitingRoom = true),
-                  (this.gameId = response.data.roomData.id);
-                console.log(response);
+                  (this.gameId = response.data.roomData.id); 
               } else {
                 this.massage = response.data.massage;
                 this.PlayBtn = true;
-                (this.waitingRoom = false), console.log(response);
-                console.log("error");
+                (this.waitingRoom = false), console.log(response); 
               }
             },
             (error) => {
@@ -321,13 +332,11 @@ export default {
                   this.gameId = response.data.id;
                   this.systemPlay = true;
                 }
-
-                console.log(response);
+ 
               } else {
                 this.massage = response.data.massage;
                 this.PlayBtn = true;
-                (this.systemPlay = false), console.log(response);
-                console.log("error");
+                (this.systemPlay = false), console.log(response); 
               }
             },
             (error) => {
