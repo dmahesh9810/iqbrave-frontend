@@ -171,7 +171,7 @@
                     "
                   >
                     <li class="rounded-sm px-3 py-1 hover:bg-gray-100 text-right p-2 mt-2">
-                      <router-link
+                      <router-link @click="isOpen = !isOpen"
                         to="profile"
                         class="rounded-sm px-3 py-1 hover:bg-gray-100"
                         >Profile</router-link
@@ -229,6 +229,9 @@ export default {
     logOut() {
             this.$store.dispatch("auth/logout");
             this.$router.push("/home");
+            if(this.isOpen){
+              this.isOpen =  false;
+            }
       axios
         .post("https://backend-re5zx.ondigitalocean.app/api/userlogout/",{ balance: this.balance - this.enterValue,},{ headers: authHeader() })
         .then((response) => {
