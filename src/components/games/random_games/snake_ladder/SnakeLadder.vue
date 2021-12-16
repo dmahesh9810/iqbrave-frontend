@@ -2,7 +2,10 @@
   <div>
     <!-- enater game -->
     <div class="flex items-center p-10 w-full h-full bg-white">
-      <div class="border-b  grid grid-cols-2 gap-8">
+      <div class="border-b  
+      2xl:pt-16 2xl:grid 2xl:grid-cols-2 2xl:gap-8
+       xl:pt-16 xl:grid xl:grid-cols-2 xl:gap-8
+       lg:pt-16 lg:grid lg:grid-cols-2 lg:gap-8">
         <div class="flex flex-col justify-start">
           <div
             class="

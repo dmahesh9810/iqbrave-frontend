@@ -1,32 +1,27 @@
 <template>
   <div>
-    <div class="p-16 items-center justify-center bg-white">
-      <div class="p-16">
+    <div class="items-center justify-center bg-white">
+      <div class="lg:p-16 2xl:p-16 xl:p-16 md:p-16">
         <!-- first name -->
         <div>
           <div>
               <h1 class="text-green-500" v-if="successMassage !== ''">{{successMassage}}</h1>
               <h1 class="text-red-500" v-if="errorMassage !== ''">{{errorMassage}}</h1>
             <div
-              class="
-                group
-                block
+              class=" 
                 rounded-lg
-                p-6
-                bg-whitering-1
-                ring-gray-900/5
-                shadow-lg
-                space-y-3
+                p-6 
+                shadow-lg 
               "
             >
               <div v-if="firstNameEdit === false">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center  ">
                   <h3 class="text-gray-900 text-sm font-semibold">
                     First Name
                   </h3>
                 </div>
-                <p class="text-gray-500 text-sm absolute">{{Fname}}</p>
-                <div class="text-right">
+                <p class="text-gray-500 text-sm ">{{Fname}}</p>
+                <div class="">
                   <button
                     @click="firstNameEditBtn()"
                     class="
@@ -47,7 +42,7 @@
                 </div>
               </div>
               <div v-if="firstNameEdit === true">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3 ">
                   <h3 class="text-gray-900 text-sm font-semibold">
                     First Name
                   </h3>
@@ -63,7 +58,7 @@
                       py-3
                       placeholder-blueGray-300
                       text-blueGray-600
-                      relative
+                      
                       bg-white bg-white
                       rounded
                       text-sm
@@ -102,23 +97,18 @@
         <div>
           <div>
             <div
-              class="
-                group
-                block
+              class=" 
                 rounded-lg
-                p-6
-                bg-whitering-1
-                ring-gray-900/5
-                shadow-lg
-                space-y-3
+                p-6 
+                shadow-lg 
               "
             >
               <div v-if="LastNameEdit === false">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3 ">
                   <h3 class="text-gray-900 text-sm font-semibold">Last Name</h3>
                 </div>
-                <p class="text-gray-500 text-sm absolute">{{Lname}}</p>
-                <div class="text-right">
+                <p class="text-gray-500 text-sm ">{{Lname}}</p>
+                <div class="">
                   <button
                     @click="LastNameEditBtn()"
                     class="
@@ -139,7 +129,7 @@
                 </div>
               </div>
               <div v-if="LastNameEdit === true">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3 ">
                   <h3 class="text-gray-900 text-sm font-semibold">Last Name</h3>
                 </div>
                 <div>
@@ -153,7 +143,7 @@
                       py-3
                       placeholder-blueGray-300
                       text-blueGray-600
-                      relative
+                      
                       bg-white bg-white
                       rounded
                       text-sm
@@ -193,24 +183,20 @@
           <div>
             <div
               class="
-                group
-                block
                 rounded-lg
                 p-6
-                bg-whitering-1
                 ring-gray-900/5
-                shadow-lg
-                space-y-3
+                shadow-lg 
               "
             >
               <div v-if="EmailEdit === false">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3 ">
                   <h3 class="text-gray-900 text-sm font-semibold">E-mail</h3>
                 </div>
-                <p class="text-gray-500 text-sm absolute">
+                <p class="text-gray-500 text-sm ">
                   {{Email}}
                 </p>
-                <div class="text-right">
+                <div class="">
                   <button
                     @click="EmailEditBtn()"
                     class="
@@ -231,7 +217,7 @@
                 </div>
               </div>
               <div v-if="EmailEdit === true">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3 ">
                   <h3 class="text-gray-900 text-sm font-semibold">Email</h3>
                 </div>
                 <div>
@@ -245,7 +231,6 @@
                       py-3
                       placeholder-blueGray-300
                       text-blueGray-600
-                      relative
                       bg-white bg-white
                       rounded
                       text-sm
@@ -319,22 +304,17 @@
           <div>
             <div
               class="
-                group
-                block
                 rounded-lg
                 p-6
-                bg-whitering-1
-                ring-gray-900/5
                 shadow-lg
-                space-y-3
               "
             >
               <div v-if="CountryEdit === false">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3 ">
                   <h3 class="text-gray-900 text-sm font-semibold">Country</h3>
                 </div>
-                <p class="text-gray-500 text-sm absolute">{{Country}}</p>
-                <div class="text-right">
+                <p class="text-gray-500 text-sm ">{{Country}}</p>
+                <div class="">
                   <button
                     @click="CountryEditBtn()"
                     class="
@@ -355,7 +335,7 @@
                 </div>
               </div>
               <div v-if="CountryEdit === true">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3 ">
                   <h3 class="text-gray-900 text-sm font-semibold">Country</h3>
                 </div>
                 <div>
@@ -369,7 +349,7 @@
                       py-3
                       placeholder-blueGray-300
                       text-blueGray-600
-                      relative
+                      
                       bg-white bg-white
                       rounded
                       text-sm
@@ -408,23 +388,18 @@
         <div>
           <div>
             <div
-              class="
-                group
-                block
+              class=" 
                 rounded-lg
-                p-6
-                bg-whitering-1
-                ring-gray-900/5
-                shadow-lg
-                space-y-3
+                p-6 
+                shadow-lg 
               "
             >
               <div v-if="CityEdit === false">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3  ">
                   <h3 class="text-gray-900 text-sm font-semibold">City</h3>
                 </div>
-                <p class="text-gray-500 text-sm absolute">{{City}}</p>
-                <div class="text-right">
+                <p class="text-gray-500 text-sm  ">{{City}}</p>
+                <div class=" ">
                   <button
                     @click="CityEditBtn()"
                     class="
@@ -445,7 +420,7 @@
                 </div>
               </div>
               <div v-if="CityEdit === true">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3  ">
                   <h3 class="text-gray-900 text-sm font-semibold">City</h3>
                 </div>
                 <div>
@@ -459,7 +434,7 @@
                       py-3
                       placeholder-blueGray-300
                       text-blueGray-600
-                      relative
+                       
                       bg-white bg-white
                       rounded
                       text-sm
@@ -498,23 +473,18 @@
         <div>
           <div>
             <div
-              class="
-                group
-                block
+              class=" 
                 rounded-lg
-                p-6
-                bg-whitering-1
-                ring-gray-900/5
-                shadow-lg
-                space-y-3
+                p-6 
+                shadow-lg 
               "
             >
               <div v-if="MobileEdit === false">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3  ">
                   <h3 class="text-gray-900 text-sm font-semibold">Mobile</h3>
                 </div>
-                <p class="text-gray-500 text-sm absolute">{{Mobile}}</p>
-                <div class="text-right">
+                <p class="text-gray-500 text-sm  ">{{Mobile}}</p>
+                <div class=" ">
                   <button
                     @click="MobileEditBtn()"
                     class="
@@ -535,7 +505,7 @@
                 </div>
               </div>
               <div v-if="MobileEdit === true">
-                <div class="flex items-center space-x-3 relative">
+                <div class="flex items-center space-x-3  ">
                   <h3 class="text-gray-900 text-sm font-semibold">Mobile</h3>
                 </div>
                 <div>
@@ -548,8 +518,7 @@
                       px-3
                       py-3
                       placeholder-blueGray-300
-                      text-blueGray-600
-                      relative
+                      text-blueGray-600 
                       bg-white bg-white
                       rounded
                       text-sm
@@ -587,22 +556,17 @@
         <div>
           <div>
             <div
-              class="
-                group
-                block
+              class=" 
                 rounded-lg
-                p-6
-                bg-whitering-1
-                ring-gray-900/5
-                shadow-lg
-                space-y-3
+                p-6 
+                shadow-lg 
               "
             >
-              <div class="flex items-center space-x-3 relative">
+              <div class="flex items-center space-x-3  ">
                 <h3 class="text-gray-900 text-sm font-semibold">Password</h3>
               </div>
-              <p class="text-gray-500 text-sm absolute">****************</p>
-              <div class="text-right">
+              <p class="text-gray-500 text-sm  ">****************</p>
+              <div class=" ">
                 <button
                   class="
                     bg-transparent

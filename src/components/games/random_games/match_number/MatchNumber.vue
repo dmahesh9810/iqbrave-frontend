@@ -2,7 +2,11 @@
   <div>
     <!-- enater game -->
     <div class="flex items-center p-10 w-full h-full bg-white">
-      <div class="border-b pt-16 grid grid-cols-2 gap-8">
+      <div class="border-b
+       2xl:pt-16 2xl:grid 2xl:grid-cols-2 2xl:gap-8
+       xl:pt-16 xl:grid xl:grid-cols-2 xl:gap-8
+       lg:pt-16 lg:grid lg:grid-cols-2 lg:gap-8
+       ">
         <div class="flex flex-col justify-start">
           <div
             class="
@@ -27,7 +31,7 @@
         <div class="flex flex-col">
           <div class="flex flex-col gap-4">
             <h1 class="capitalize text-4xl font-extrabold">Match Number</h1>
-            <p class="text-lg text-gray-500">
+            <p class=" text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione
               error eum qui quidem? Veniam accusamus ea repudiandae itaque,
@@ -43,7 +47,9 @@
                   py-3
                   text-white
                   rounded-lg
-                  w-2/4
+                  2xl:w-2/4
+                  lg:w-2/4
+                  md:w-2/4
                   text-center
               "
             >
