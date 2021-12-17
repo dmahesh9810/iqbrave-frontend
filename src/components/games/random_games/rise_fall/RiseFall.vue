@@ -29,12 +29,9 @@
         </div>
         <div class="flex flex-col">
           <div class="flex flex-col gap-4">
-            <h1 class="capitalize text-4xl font-extrabold">Rise Fall</h1>
+            <h1 class="capitalize text-4xl font-extrabold">Rise & Fall</h1>
             <p class="text-lg text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione
-              error eum qui quidem? Veniam accusamus ea repudiandae itaque,
-              explicabo quidem perspiciatis. Culpa, asperiores deserunt.
+              rise & fall is when you select a number from 1 to 10 and guest whether the system number corresponding to that number is up or down. If you do the right guest you will win the game and if it fails you will lose the match.Here you can practice this game with tc (traning coin). To play with gc (gold coin) you have to buy gc coin.
             </p>
             <div class="flex items-center gap-4 my-6 cursor-pointer">
               
@@ -46,7 +43,9 @@
                   py-3
                   text-white
                   rounded-lg
-                  w-2/4
+                  2xl:w-2/4
+                  lg:w-2/4
+                  md:w-2/4
                   text-center
               "
             >

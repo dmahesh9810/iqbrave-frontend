@@ -32,10 +32,7 @@
           <div class="flex flex-col gap-4">
             <h1 class="capitalize text-4xl font-extrabold">Match Number</h1>
             <p class=" text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione
-              error eum qui quidem? Veniam accusamus ea repudiandae itaque,
-              explicabo quidem perspiciatis. Culpa, asperiores deserunt.
+              A match game is when you match a random number from iqbrave with another random number you get while playing. Here you will be defeated if the number of the player playing by the system other than your number matches the number received by the system. Here you can practice this game with tc (traning coin). To play with gc (gold coin) you have to buy gc coin.
             </p>
             <div class="flex items-center gap-4 my-6 cursor-pointer">
               

@@ -24,10 +24,7 @@
           <div class="flex flex-col gap-4 md:ml-3 lg:ml-3 xl:ml-3">
             <h1 class="capitalize 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-xl font-extrabold">Maths Knowledge</h1>
             <p class="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione
-              error eum qui quidem? Veniam accusamus ea repudiandae itaque,
-              explicabo quidem perspiciatis. Culpa, asperiores deserunt.
+             Maths knowledge is to win the competition by answering the questions correctly according to the obage maths knowledge you get. Here you can only use gc (Gold coin).
             </p>
             <div class="flex items-center gap-4 my-6 cursor-pointer">
               <router-link

@@ -30,10 +30,7 @@
           <div class="flex flex-col gap-4">
             <h1 class="capitalize text-4xl font-extrabold">Snake Ladder</h1>
             <p class="text-lg text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione
-              error eum qui quidem? Veniam accusamus ea repudiandae itaque,
-              explicabo quidem perspiciatis. Culpa, asperiores deserunt.
+             Snake Ladder is a system created to play with another player to determine your win or loss. Here the first number 1 player will move on to the game and the other player will have to wait for the number 1 number to arrive. The player who reaches number 100 first wins the match and the other player loses. Here you can practice this game with tc (traning coin). To play with gc (gold coin) you have to buy gc coin.
             </p>
             <div class="flex items-center gap-4 my-6 cursor-pointer">
               
@@ -45,7 +42,9 @@
                   py-3
                   text-white
                   rounded-lg
-                  w-2/4
+                  2xl:w-2/4
+                  lg:w-2/4
+                  md:w-2/4
                   text-center
               "
             >

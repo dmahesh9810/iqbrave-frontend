@@ -26,10 +26,7 @@
               Science Knowledge
             </h1>
             <p class="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione
-              error eum qui quidem? Veniam accusamus ea repudiandae itaque,
-              explicabo quidem perspiciatis. Culpa, asperiores deserunt.
+              Science knowledge is to win the competition by answering correctly the questions you get according to obage science knowledge. Here you can only use gc (Gold coin).
             </p>
             <div class="flex items-center gap-4 my-6 cursor-pointer">
               <router-link

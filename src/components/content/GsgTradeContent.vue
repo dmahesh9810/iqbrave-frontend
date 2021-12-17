@@ -20,12 +20,7 @@
             <div></div>
             <p class="text-3xl text-center text-gray-800">GSG Trade</p>
             <p class="text-center text-gray-800">
-              In order to receive the best answers to your questions please
-              follow these simple guidelines. Be descriptive about your question
-              or problem and be sure to include any errors. Single line topics
-              will rarely receive answers and do not just post a screenshot.
-              Provide examples of the code in question and use syntax
-              highlighting.
+              The value of gsg coin will fluctuate depending on the wins and losses of all players playing on iqbrave.com. If you know how gsg coin depreciates, you can buy gsg coin here at a lower level and sell it at a higher value here.
             </p>
             <div class="text-lg text-center text-gray-500 mt-10">
               <router-link

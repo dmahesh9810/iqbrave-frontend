@@ -36,10 +36,7 @@
               Ict Knowledge
             </h1>
             <p class="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione
-              error eum qui quidem? Veniam accusamus ea repudiandae itaque,
-              explicabo quidem perspiciatis. Culpa, asperiores deserunt.
+              ict knowledge is the knowledge of obage information communication technology that allows you to answer the questions correctly and win the competition. Here you can only use gc (Gold coin).
             </p>
             <div class="flex items-center gap-4 my-6 cursor-pointer">
               <router-link

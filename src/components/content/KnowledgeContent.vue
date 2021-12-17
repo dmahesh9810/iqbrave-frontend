@@ -3,7 +3,7 @@
     <section class="parallax-knowledge-content">
       <div class="parallax-inner ">
         <h1
-            class="cursor-default text-white ml-10 text-6xl bg-opacity-0 mb-10"
+            class="cursor-default text-white ml-10 text-5xl bg-opacity-0 mb-10"
           >
             Knowledge Game
           </h1>
@@ -11,16 +11,13 @@
           class="cursor-default
             text-white
             ml-10
+            text-center
             text-sm
             bg-opacity-0
             mb-10
           "
         >
-          In order to receive the best answers to your questions please follow these simple guidelines.
-
-Be descriptive about your question or problem and be sure to include any errors. Single line topics will rarely receive answers and do not just post a screenshot.
-
-Provide examples of the code in question and use syntax highlighting.
+          knowledge game is a game file that can increase your gc value by answering the questions here if you have knowledge about information technology, maths and science. Here you can add information related to information technology, maths and science to iqbrave.com. Here you can only play with gc coin.
 
         </h1>
           <div class="mb-20

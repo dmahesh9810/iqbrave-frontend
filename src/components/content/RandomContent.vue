@@ -4,28 +4,14 @@
       <section class="parallax-random-content">
         <div class="parallax-inner">
           <h1
-            class="cursor-default text-white ml-10 text-6xl bg-opacity-0 mb-10"
+            class="cursor-default text-white ml-10   text-5xl bg-opacity-0 mb-10"
           >
             Random Game
           </h1>
           <h1
-            class="cursor-default text-white ml-10 text-md bg-opacity-0 mb-10"
+            class="cursor-default text-white ml-10 text-lg text-center bg-opacity-0 mb-10"
           >
-            In order to receive the best answers to your questions please follow
-            these simple guidelines. Be descriptive about your question or
-            problem and be sure to include any errors. Single line topics will
-            rarely receive answers and do not just post a screenshot. Provide
-            examples of the code in question and use syntax highlighting. In
-            order to receive the best answers to your questions please follow
-            these simple guidelines. Be descriptive about your question or
-            problem and be sure to include any errors. Single line topics will
-            rarely receive answers and do not just post a screenshot. Provide
-            examples of the code in question and use syntax highlighting. In
-            order to receive the best answers to your questions please follow
-            these simple guidelines. Be descriptive about your question or
-            problem and be sure to include any errors. Single line topics will
-            rarely receive answers and do not just post a screenshot. Provide
-            examples of the code in question and use syntax highlighting.
+           random game is a game file that determines your win or loss based on a random number you get in the game you are playing. Here you can use tc coin to practice all the games.
           </h1>
           <div class="mb-20 flex-col flex ml-auto items-center">
             <router-link
