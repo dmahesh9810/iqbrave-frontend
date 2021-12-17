@@ -27,7 +27,7 @@
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
       
       <router-link @click="isOpen = !isOpen"
-                to="/home"
+                to="/"
                 class="
                   border-b-2 border-transparent
                   hover:text-gray-300

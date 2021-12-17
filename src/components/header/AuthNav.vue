@@ -12,7 +12,7 @@
             "
           >
             <router-link
-              to="/home"
+              to="/"
               class="
                 text-gray-100
                 border-b-2 border-transparent 
@@ -24,7 +24,7 @@
              TC {{tc}}
             </router-link>
             <router-link
-              to="/home"
+              to="/"
               class="
                 text-gray-100
                 border-b-2 border-transparent 
@@ -37,7 +37,7 @@
             </router-link>
           
             <router-link
-              to="/home"
+              to="/"
               class="
                 text-gray-100
                 border-b-2 border-transparent 
@@ -49,7 +49,7 @@
              GCG {{gsg}}
             </router-link>
             <router-link
-              to="/home"
+              to="/"
               class="
                 text-gray-100
                 border-b-2 border-transparent 
