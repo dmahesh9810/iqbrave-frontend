@@ -9,7 +9,7 @@
             Random Game
           </h1>
           <h1
-            class="cursor-default text-white ml-10 text-lg text-center bg-opacity-0 mb-10"
+            class="cursor-default bg-blue-900 p-5 rounded-lg bg-opacity-80 border text-white ml-10 mr-10 text-lg text-center mb-10"
           >
            random game is a game file that determines your win or loss based on a random number you get in the game you are playing. Here you can use tc coin to practice all the games.
           </h1>
@@ -28,14 +28,18 @@
                 items-center
                 justify-center
                 btn btn-primary btn-block
-                border-4 border-blue-600
+                border-4 border-white-600
+                hover:border-4 hover:border-blue-600
                 hover:bg-blue-600
                 rounded-lg
+                bg-blue-100
                 px-3
                 py-2
-                text-white
+                bg-opacity-50
+                text-black
                 cursor-pointer
                 hover:text-white
+                text-2xl
               "
             >
               View Game
