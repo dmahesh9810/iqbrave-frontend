@@ -246,7 +246,7 @@ export default {
       this.$router.push("/home");
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/userlogout/",
+          "http://127.0.0.1:8000/api/userlogout/",
           { balance: this.balance - this.enterValue },
           { headers: authHeader() }
         )

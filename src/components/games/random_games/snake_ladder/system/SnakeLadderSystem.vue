@@ -5571,7 +5571,7 @@ export default {
 
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/snakeladderplayerclicksystem",
+          "http://127.0.0.1:8000/api/snakeladderplayerclicksystem",
           {
             gameId: this.gameId,
           },
@@ -6036,7 +6036,7 @@ export default {
               // bot
               axios
                 .post(
-                  "https://backend-re5zx.ondigitalocean.app/api/snakeladderresumebot",
+                  "http://127.0.0.1:8000/api/snakeladderresumebot",
                   {
                     gameId: this.gameId,
                   },
@@ -6553,7 +6553,7 @@ export default {
           if (this.playerClick == 0) {
             axios
               .post(
-                "https://backend-re5zx.ondigitalocean.app/api/snakeladderresumebot",
+                "http://127.0.0.1:8000/api/snakeladderresumebot",
                 {
                   gameId: this.gameId,
                 },
@@ -7045,10 +7045,6 @@ export default {
   },
 };
 
-//       this.StartTime = setInterval(() => {
-//           this.StartTimeCounter++;
-// clearInterval(this.thirdInterval);
-//           }, 1500);
 </script>
 <style>
 </style>

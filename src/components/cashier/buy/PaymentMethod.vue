@@ -138,7 +138,7 @@
 
             <div>
               <select hidden name="currency" class="uppercase" multiple>
-                <option selected >{{ payhere_currency }}</option>
+                <option selected>{{ payhere_currency }}</option>
               </select>
             </div>
             <br />
@@ -605,12 +605,11 @@ export default {
       coindata: this.$route.params,
       returnUrl: "http://localhost:8081/returnurl",
       cancelUrl: "http://127.0.0.1:8000/",
-      notifyUrl: "https://backend-re5zx.ondigitalocean.app/api/checkout/success",
+      notifyUrl: "http://127.0.0.1:8000/api/checkout/success",
       payHereBtn: true,
       skrillBtn: true,
       paymentForm: false,
 
-      
       user: "",
       submitBtn: true,
       sss: "",
@@ -624,7 +623,6 @@ export default {
       FormPayhereCurrency: "",
       FormPayhereCurrencyCheck: true,
 
-      
       hash: "",
       order_id: "",
       merchant_id: "",
@@ -643,7 +641,7 @@ export default {
       if (this.coindata.dataShareOk == "true") {
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/checkout/save/" + this.coindata.coinId,
+            "http://127.0.0.1:8000/api/checkout/save/" + this.coindata.coinId,
             {
               saveCoinId: this.coindata.coinId,
               saveCoinPrice: this.coindata.amount,

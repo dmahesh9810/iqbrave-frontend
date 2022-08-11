@@ -185,7 +185,7 @@ export default {
       this.Massage = "";
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/quizanswer",
+          "http://127.0.0.1:8000/api/quizanswer",
           {
             correct: this.Correct,
             quizResultid: this.QuizResultId,
@@ -214,7 +214,7 @@ export default {
       this.Massage = "";
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/getquiz",
+          "http://127.0.0.1:8000/api/getquiz",
           {
             stake: this.Stake,
             subject: "science",
@@ -250,7 +250,7 @@ export default {
                     this.Massage = "Time Out";
                   axios
                     .post(
-                      "https://backend-re5zx.ondigitalocean.app/api/quizanswer",
+                      "http://127.0.0.1:8000/api/quizanswer",
                       {
                         correct: "0",
                         quizResultid: this.QuizResultId,

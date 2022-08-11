@@ -444,7 +444,7 @@ export default {
       (this.errorMassage = ""),
         (this.successMassage = ""),
         axios
-          .get("https://backend-re5zx.ondigitalocean.app/api/getuserquiz", {
+          .get("http://127.0.0.1:8000/api/getuserquiz", {
             headers: authHeader(),
           })
           .then(
@@ -473,7 +473,7 @@ export default {
       (this.errorMassage = ""),
         (this.successMassage = ""),
         axios
-          .get("https://backend-re5zx.ondigitalocean.app/api/getuserquizict", {
+          .get("http://127.0.0.1:8000/api/getuserquizict", {
             headers: authHeader(),
           })
           .then(
@@ -502,7 +502,7 @@ export default {
       (this.errorMassage = ""),
         (this.successMassage = ""),
         axios
-          .get("https://backend-re5zx.ondigitalocean.app/api/getuserquizmaths", {
+          .get("http://127.0.0.1:8000/api/getuserquizmaths", {
             headers: authHeader(),
           })
           .then(
@@ -531,7 +531,7 @@ export default {
       (this.errorMassage = ""),
         (this.successMassage = ""),
         axios
-          .get("https://backend-re5zx.ondigitalocean.app/api/getuserquizscience", {
+          .get("http://127.0.0.1:8000/api/getuserquizscience", {
             headers: authHeader(),
           })
           .then(
@@ -561,7 +561,7 @@ export default {
         (this.successMassage = ""),
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/editquiz",
+            "http://127.0.0.1:8000/api/editquiz",
             {
               QuizId: this.QuizId,
               Subject: this.Subject,
@@ -581,7 +581,7 @@ export default {
 
                 axios
                   .get(
-                    "https://backend-re5zx.ondigitalocean.app/api/getquiz?page=" +
+                    "http://127.0.0.1:8000/api/getquiz?page=" +
                       this.currentPage,
                     { headers: authHeader() }
                   )
@@ -728,7 +728,7 @@ export default {
     (this.errorMassage = ""),
       (this.successMassage = ""),
       axios
-        .get("https://backend-re5zx.ondigitalocean.app/api/getuserquiz", { headers: authHeader() })
+        .get("http://127.0.0.1:8000/api/getuserquiz", { headers: authHeader() })
         .then(
           (response) => {
             if (response.data.status == 200) {

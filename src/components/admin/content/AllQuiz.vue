@@ -412,14 +412,14 @@ export default {
       quizApproved(a){
           axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/quizapproved",
+          "http://127.0.0.1:8000/api/quizapproved",
           { ApprovedId: a },
           { headers: authHeader() }
         )
         .then((response) => {
           if (response.data.status == 200) {
               axios
-      .get("https://backend-re5zx.ondigitalocean.app/api/getquiz?page=" + this.currentPage, { headers: authHeader() })
+      .get("http://127.0.0.1:8000/api/getquiz?page=" + this.currentPage, { headers: authHeader() })
       .then((response) => {
         if (response.data.status == 200) {
             console.log(response)
@@ -442,7 +442,7 @@ export default {
       this.successMassage = "",
       axios
         .post(
-          'https://backend-re5zx.ondigitalocean.app/api/editquiz',
+          'http://127.0.0.1:8000/api/editquiz',
           {
               QuizId: this.QuizId,
             Subject: this.Subject,
@@ -461,7 +461,7 @@ export default {
             //   sdf
             
     axios
-      .get("https://backend-re5zx.ondigitalocean.app/api/getquiz?page=" + this.currentPage, { headers: authHeader() })
+      .get("http://127.0.0.1:8000/api/getquiz?page=" + this.currentPage, { headers: authHeader() })
       .then((response) => {
         if (response.data.status == 200) {
           this.content = response.data.question.data;
@@ -592,7 +592,7 @@ export default {
       this.errorMassage = "",
       this.successMassage = "",
     axios
-      .get("https://backend-re5zx.ondigitalocean.app/api/getquiz", { headers: authHeader() })
+      .get("http://127.0.0.1:8000/api/getquiz", { headers: authHeader() })
       .then((response) => {
         if (response.data.status == 200) {
           console.log(response.data.question);

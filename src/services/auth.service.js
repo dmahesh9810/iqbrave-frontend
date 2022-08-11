@@ -2,7 +2,7 @@ import axios from 'axios';
 // import authHeader from "@/services/auth-header.js";
 
 
-const API_URL = 'https://backend-re5zx.ondigitalocean.app/api/auth';
+const API_URL = 'http://127.0.0.1:8000/api/auth';
 
 class AuthService {
   login(user) {

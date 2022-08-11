@@ -243,7 +243,7 @@ export default {
       this.PlayBtn = false;
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/snakeladderentersystemresumcansle",
+          "http://127.0.0.1:8000/api/snakeladderentersystemresumcansle",
           {
             gameId: this.gameId,
             stake: this.Stake,
@@ -278,7 +278,7 @@ export default {
         this.PlayBtn = false;
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/snakeladderenter",
+            "http://127.0.0.1:8000/api/snakeladderenter",
             {
               stake: this.Stake,
               gameType: this.gameType,
@@ -306,7 +306,7 @@ export default {
         this.PlayBtn = false;
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/snakeladderentersystem",
+            "http://127.0.0.1:8000/api/snakeladderentersystem",
             {
               stake: this.Stake,
               gameType: this.gameType,

@@ -162,7 +162,7 @@ export default {
       this.massage = "";
 axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/feedback",
+          "http://127.0.0.1:8000/api/feedback",
           {
             email: this.email,
             feedback: this.feedback,

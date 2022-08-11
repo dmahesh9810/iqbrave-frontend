@@ -560,38 +560,7 @@
         </div>
         <!-- Mobile -->
         <div>
-          <!-- <div>
-            <div
-              class=" 
-                rounded-lg
-                p-6 
-                shadow-lg 
-              "
-            >
-              <div class="flex items-center space-x-3  ">
-                <h3 class="text-gray-900 text-sm font-semibold">Password</h3>
-              </div>
-              <p class="text-gray-500 text-sm  ">****************</p>
-              <div class=" ">
-                <button
-                  class="
-                    bg-transparent
-                    hover:bg-blue-500
-                    text-blue-700
-                    font-semibold
-                    hover:text-white
-                    py-2
-                    px-4
-                    border border-blue-500
-                    hover:border-transparent
-                    rounded
-                  "
-                >
-                  Change
-                </button>
-              </div>
-            </div>
-          </div> -->
+         
         </div>
         <!-- Mobile -->
       </div>
@@ -636,7 +605,7 @@ export default {
 this.verifyBtn = true
       axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/email/verification-notification",
+            "http://127.0.0.1:8000/api/email/verification-notification",
             {
               data: "data"
             },
@@ -662,7 +631,7 @@ this.verifyBtn = true
       if (row === "firstname") {
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
+            "http://127.0.0.1:8000/api/profile-update",
             {
               firstname: value,
             },
@@ -685,7 +654,7 @@ this.verifyBtn = true
       } else if (row === "lastname") {
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
+            "http://127.0.0.1:8000/api/profile-update",
             {
               lastname: value,
             },
@@ -708,7 +677,7 @@ this.verifyBtn = true
       else if (row === "email") {
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
+            "http://127.0.0.1:8000/api/profile-update",
             {
               email: value,
             },
@@ -731,7 +700,7 @@ this.verifyBtn = true
       else if (row === "country") {
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
+            "http://127.0.0.1:8000/api/profile-update",
             {
               country: value,
             },
@@ -754,7 +723,7 @@ this.verifyBtn = true
       else if (row === "city") {
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
+            "http://127.0.0.1:8000/api/profile-update",
             {
               city: value,
             },
@@ -777,7 +746,7 @@ this.verifyBtn = true
       else if (row === "mobile") {
         axios
           .post(
-            "https://backend-re5zx.ondigitalocean.app/api/profile-update",
+            "http://127.0.0.1:8000/api/profile-update",
             {
               mobile: value,
             },
@@ -839,7 +808,7 @@ this.verifyBtn = true
         // asd
         axios
           .get(
-            "https://backend-re5zx.ondigitalocean.app/api/email/verification-notification-check",
+            "http://127.0.0.1:8000/api/email/verification-notification-check",
             { headers: authHeader() }
           )
           .then((response) => {

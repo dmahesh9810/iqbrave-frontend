@@ -243,7 +243,7 @@ counter: 0,
         this.message = "";
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/reset-password",
+          "http://127.0.0.1:8000/api/reset-password",
           {
             email: this.mailAddress,
             password: this.password,
@@ -289,7 +289,7 @@ counter: 0,
         this.message = "";
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/frogot-password/",
+          "http://127.0.0.1:8000/api/frogot-password/",
           {
             email: this.mailAddress,
           },

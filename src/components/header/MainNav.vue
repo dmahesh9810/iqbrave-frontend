@@ -237,7 +237,7 @@ export default {
               this.isOpen =  false;
             }
       axios
-        .post("https://backend-re5zx.ondigitalocean.app/api/userlogout/",{ balance: this.balance - this.enterValue,},{ headers: authHeader() })
+        .post("http://127.0.0.1:8000/api/userlogout/",{ balance: this.balance - this.enterValue,},{ headers: authHeader() })
         .then((response) => {
           if (response.data.status == 200) {
             this.$store.dispatch("auth/logout");

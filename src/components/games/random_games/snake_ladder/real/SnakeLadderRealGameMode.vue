@@ -5516,7 +5516,7 @@ export default {
       if(this.playerClick == 0){
         axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/snakeladderplayerclick",
+          "http://127.0.0.1:8000/api/snakeladderplayerclick",
           {
             gameId: this.gameId,
             token: this.token,
@@ -5547,7 +5547,7 @@ export default {
           // kk
           axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/snakeladderplayerwaiting",
+          "http://127.0.0.1:8000/api/snakeladderplayerwaiting",
           {
             gameId: this.gameId,
           },
@@ -5597,7 +5597,7 @@ export default {
       this.waitingRoomCallCounter++;
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/snakeladderwaitingroom",
+          "http://127.0.0.1:8000/api/snakeladderwaitingroom",
           {
             gameId: this.gameId,
           },

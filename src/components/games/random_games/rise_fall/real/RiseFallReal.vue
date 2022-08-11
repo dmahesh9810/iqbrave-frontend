@@ -344,7 +344,7 @@ export default {
          this.enterGame = true;
          axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/risefallenter",
+          "http://127.0.0.1:8000/api/risefallenter",
           {
             stake: this.Stake,
             digit: this.Digit,
@@ -496,7 +496,7 @@ export default {
          this.enterGame = true;
          axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/risefallenter",
+          "http://127.0.0.1:8000/api/risefallenter",
           {
             stake: this.Stake,
             digit: this.Digit,

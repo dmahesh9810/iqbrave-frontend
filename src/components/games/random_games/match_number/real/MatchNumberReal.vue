@@ -282,7 +282,7 @@ export default {
       this.startGameOk = true;
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/matchnumberenter",
+          "http://127.0.0.1:8000/api/matchnumberenter",
           {
             stake: this.Stake,
             coinType: this.coinType,
@@ -312,7 +312,7 @@ export default {
 
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/matchnumberplayer",
+          "http://127.0.0.1:8000/api/matchnumberplayer",
           {
             player_click: this.player_click,
             gameId: this.gameId,
@@ -374,7 +374,7 @@ export default {
           if (this.player_click !== 2) {
             axios
               .post(
-                "https://backend-re5zx.ondigitalocean.app/api/matchnumberbot",
+                "http://127.0.0.1:8000/api/matchnumberbot",
                 {
                   player_click: this.player_click,
                   gameId: this.gameId,
@@ -418,7 +418,7 @@ export default {
     Resume() {
       axios
         .post(
-          "https://backend-re5zx.ondigitalocean.app/api/matchresume",
+          "http://127.0.0.1:8000/api/matchresume",
           {
             gameId: this.resumeId,
           },
